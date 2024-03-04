@@ -1,0 +1,25 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Post</title>
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/header.css">
+</head>
+<body>
+    <%- include("partials/header.ejs") %>
+
+    <div class="post-container">
+        <div>
+            <h1><u><%= data.title %></u></h1>
+            <h3><%= data.subtitle %></h3>
+            <img src="<%= data.image_url %>" alt="">
+            <p><%= data.body %></p>
+            <a href="/" class="button">Back</a>
+        </div>
+    </div>
+
+    <%- include("partials/footer.ejs") %>
+</body>
+</html>

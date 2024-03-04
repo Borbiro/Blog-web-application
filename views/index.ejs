@@ -18,6 +18,10 @@
                         <img class="blog-img" src="<%= data[i].image_url %>" alt="">
                         <h3 class="title"><%= data[i].title %></h3>
                         <p class="subtitle"><%= data[i].subtitle %></p>
+                        <form action="/post" method="post">
+                            <input type="hidden" name="post-number" value=<%= i %> />
+                            <input class="button" type="submit" value="More"></input>
+                        </form>
                     </div>
                 <% } %>    
             </div>
