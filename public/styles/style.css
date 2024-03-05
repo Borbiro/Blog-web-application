@@ -158,3 +158,16 @@ h3 {
     padding-bottom: 5px;
     padding-top: 20px;
   }
+
+  .buttons-container {
+    display: flex;
+    gap: 50px;
+  }
+
+  .buttons-container > a {
+    width: 200px
+  }
+
+  .buttons-container > form > input {
+    width: 200px
+  }

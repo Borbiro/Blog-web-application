@@ -16,7 +16,19 @@
             <h3><%= data.subtitle %></h3>
             <img src="<%= data.image_url %>" alt="">
             <p><%= data.body %></p>
-            <a href="/" class="button">Back</a>
+            <div class="buttons-container">
+                <form action="/" method="get" style="margin-bottom: 0px;">
+                    <input class="button" type="submit" value="Back to Home"></input>
+                </form>
+                <form action="/change" method="post" style="margin-bottom: 0px;">
+                    <input type="hidden" name="post-number" style="height: 0px; width: 0px;" value=<%= postNumber %> />
+                    <input class="button" type="submit" value="Change post"></input>
+                </form>
+                <form action="/delete" method="post" style="margin-bottom: 0px;">
+                    <input type="hidden" name="post-number" style="height: 0px; width: 0px;" value=<%= postNumber %> />
+                    <input class="button" type="submit" value="Delete Post"></input>
+                </form>
+            </div>
         </div>
     </div>
 
