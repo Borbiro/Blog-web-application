@@ -130,3 +130,31 @@ h3 {
     font-size: 2rem;
     text-align: left;
   }
+
+  .create-container {
+    display: flex;
+    justify-content: center;
+  }
+
+  form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 30%;
+  }
+
+  form > input {
+    height: 40px;
+    font-size: 1.2rem;
+  }
+
+  form > textarea {
+    font-size: 1.2rem;
+  }
+
+  form > label {
+    font-size: 1.75rem;
+    font-weight: bold;
+    padding-bottom: 5px;
+    padding-top: 20px;
+  }

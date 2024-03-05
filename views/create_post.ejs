@@ -8,6 +8,25 @@
     <link rel="stylesheet" href="styles/header.css">
 </head>
 <body>
-    <h1>hello</h1>
+    <%- include("partials/header.ejs") %>
+    <div class="create-container">
+        <form action="submit" method="post">
+            <label for="title">Title</label>
+            <input type="text" id="title" name="title" placeholder="Blog's title">
+        
+            <label for="subtitle">Subtitle</label>
+            <input type="text" id="subtitle" name="subtitle" placeholder="Blog's subtitle">
+        
+            <label for="imgLink">Image link</label>
+            <input type="url" id="imgLink" name="imgLink" placeholder="https://google.com/img.png">
+        
+            <label for="body">Subject</label>
+            <textarea id="body" placeholder="Summary" name="body" style="height:200px"></textarea>
+        
+            <input class="button" type="submit" value="Submit" style="margin-top: 20px;">
+          </form>
+    </div>
+      
+    <%- include("partials/footer.ejs") %>
 </body>
 </html>
